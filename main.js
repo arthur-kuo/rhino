@@ -1,11 +1,7 @@
-const axios = require('axios');
+const DailySentenceService = require('./DailySentenceService');
+const MetaphorpsumStrategy = require('./MetaphorpsumStrategy');
 
-class DailySentenceService{
-    async getSentence() {
-        const response = await axios.get('http://metaphorpsum.com/sentences/3');
-        return response.data;
-      }
-}
+const strategy = new MetaphorpsumStrategy();
+const service = new DailySentenceService(strategy);
 
-// a = new DailySentenceService;
-// a.getSentence().then(console.log).catch(console.error);
+service.getSentence().then(console.log).catch(console.error);
