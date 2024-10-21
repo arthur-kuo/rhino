@@ -1,5 +1,5 @@
 ## README: 商品相關資料的關聯式資料庫設計
-![資料庫結構](https://github.com/arthur-kuo/rhino/blob/main/task2/ERD.png)
+![資料庫結構](https://github.com/arthur-kuo/rhino/blob/master/task2/ERD.png)
 
 ### 1. **背景與假設**
 1. 每一個手機型號可以有多種顏色。
